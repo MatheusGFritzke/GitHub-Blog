@@ -1,0 +1,44 @@
+{
+  "transactions": [
+    {
+      "description": "Salario",
+      "price": 5000,
+      "category": "Salario",
+      "type": "income",
+      "createdAt": 1698938555613,
+      "id": 1
+    },
+    {
+      "description": "Hamburguer",
+      "price": 200,
+      "category": "Comida",
+      "type": "outcome",
+      "createdAt": 1698938568854,
+      "id": 2
+    },
+    {
+      "description": "Lolzito",
+      "price": 100,
+      "category": "Jogos",
+      "type": "outcome",
+      "createdAt": 1698939080204,
+      "id": 3
+    },
+    {
+      "description": "salario",
+      "price": 10000,
+      "category": "Salario",
+      "type": "income",
+      "createdAt": 1698939119205,
+      "id": 4
+    },
+    {
+      "description": "teste",
+      "price": 12312,
+      "category": "r3ete",
+      "type": "outcome",
+      "createdAt": 1698939398217,
+      "id": 5
+    }
+  ]
+}
