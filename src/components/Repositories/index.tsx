@@ -1,16 +1,34 @@
 import { RepositoriesContainer, Header, HoursComponentContainer } from "./styles";
 
-export function Repositories() {
+interface RepositoriesProps {
+  name: string
+  description: string
+  html_url: string
+  created_at: string
+  language: string
+  pushed_at: string
+  updated_at: string
+}
+
+export function Repositories({
+  name,
+  description,
+  html_url,
+  created_at,
+  language,
+  pushed_at,
+  updated_at
+}: RepositoriesProps) {
 
   return (
     <RepositoriesContainer>
       <Header>
-        <span>Título asdasd asd asd asd asd asd as d asd asd asdasdasd </span>
+        <span>{name}</span>
         <HoursComponentContainer>
-          Há 2 horas
+          {updated_at}
         </HoursComponentContainer>
       </Header>
-      <a>Content of repository sdfdsfsd sdfd sf sdf sd fsd fsdfsdfsdf sdf sdfs dfs df asdasda ada dasdasdasdasda sdasdasdasdasd asdasdasdas dasdasd asdasda dasd asdasdasd asdsadasd asdsad asdasdas dsadasdasdasdasd asdasd asd asdas das dasdasdasd asdasd asdadas dasdas dasdas dasdasdsad asdasd asd asdas dasda dasdasdasd asdsad asdad sad asd </a>
+      <a>{description}</a>
     </RepositoriesContainer>
   )
 }
