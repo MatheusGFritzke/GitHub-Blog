@@ -20,12 +20,16 @@ export function Repositories({
   updated_at
 }: RepositoriesProps) {
 
+  const openRepo = (link: string) => {
+    return window.open(link, "_blank")
+  }
+
   return (
-    <RepositoriesContainer>
+    <RepositoriesContainer onClick={() => openRepo(html_url)}>
       <Header>
         <span>{name}</span>
         <HoursComponentContainer>
-          {updated_at}
+          {pushed_at}
         </HoursComponentContainer>
       </Header>
       <a>{description}</a>

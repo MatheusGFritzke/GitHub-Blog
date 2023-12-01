@@ -7,6 +7,7 @@ export const RepositoriesContainer = styled.div`
   background: ${(props) => props.theme['gray-400']};
   padding: 2rem;
   overflow: hidden;
+  cursor: pointer;
 
   a {
     color: ${(props) => props.theme['white-300']};
@@ -18,6 +19,11 @@ export const RepositoriesContainer = styled.div`
     max-height: 140px;
     line-height: 160%;
     
+  }
+
+  &&:hover {
+    transition: 0.2s;
+    background: ${(props) => props.theme['gray-700']};
   }
 `
 
